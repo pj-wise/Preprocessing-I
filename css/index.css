@@ -10,6 +10,15 @@
   color: #7d7d9e;
   margin-top: 1rem;
 }
+.fchildlist {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+}
+.liststyle {
+  margin: 0.25rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid black;
+}
 html,
 body,
 div,
@@ -203,10 +212,38 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-#content .skills .skillIcons {
-  padding: 10px 10px 10px 10px;
-  margin: 3rem auto;
+#content .skills .skillItems:first-child {
+  margin-top: 2rem;
+  border-top: 1px solid black;
 }
-#content .skills .skillIcons img {
-  width: 4rem;
+#content .skills .skillItems {
+  margin: 0.25rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid black;
+}
+#content #work {
+  width: 100%;
+  margin: 1rem auto 1rem auto;
+  text-align: left;
+  border-top: 2px solid black;
+}
+#content #work h2 {
+  font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
+}
+#content #work .workItems:first-child {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+  border-top: none;
+  background-color: #b3b5b7;
+}
+#content #work .workItems {
+  margin: 0.25rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid black;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
 }
