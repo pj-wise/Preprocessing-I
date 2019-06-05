@@ -5,6 +5,11 @@
 .headSpace {
   padding: 10px 0;
 }
+.h2style {
+  font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
+}
 html,
 body,
 div,
@@ -109,7 +114,7 @@ section {
 }
 body {
   line-height: 1;
-  background-color: #aec0cf;
+  background-color: #E7E8E9;
   font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 ol,
@@ -143,9 +148,9 @@ body {
 .mainHead {
   width: 85%;
   text-align: center;
-  background-color: #E7E8E9;
+  background-color: #aec0cf;
   padding: 10px 0;
-  margin: 2rem auto 0 auto;
+  margin: 1rem auto 3rem auto;
 }
 .mainHead h1 {
   font-size: 2.7rem;
@@ -163,17 +168,45 @@ body {
 #content {
   display: flex;
   flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
 }
-.aboutMe {
+#content .aboutMe {
   background-color: #E7E8E9;
-  width: 35%;
-  margin: 2rem auto 0 auto;
+  width: 40%;
+  margin: 1rem 0 1rem 0;
   text-align: center;
   padding: 10px 10px 10px 10px;
 }
-.aboutMe h2 {
+#content .aboutMe h2 {
   font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
 }
-.aboutMe p {
+#content .aboutMe p {
   padding: 10px 10px 10px 10px;
+}
+#content .skills {
+  background-color: #aec0cf;
+  width: 55%;
+  margin: 1rem 0 1rem 1rem;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+#content .skills h2 {
+  font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
+}
+#content .skills #allIcons {
+  display: flex;
+  flex-wrap: wrap;
+}
+#content .skills .skillIcons {
+  padding: 10px 10px 10px 10px;
+  margin: 3rem auto;
+}
+#content .skills .skillIcons img {
+  width: 4rem;
 }
