@@ -177,7 +177,7 @@ body {
 	height : 100%;
 	max-width:1050px;
 	// padding: 1rem 3rem 1rem 3rem;
-	margin: @sectionMarg;
+	margin: 0 auto;
 }
 
 .mainHead {
@@ -186,7 +186,7 @@ body {
 	text-align      : center;
 	background-color: @secondColor;
 	.headSpace();
-	margin: @sectionMarg;
+	margin: 0 auto;;
 
 
 	h1 {
@@ -299,10 +299,39 @@ body {
 	}
 }
 
-@media (max-width:600px) {
+@media (max-width:730px) {
 	.mainHead {
 		width: 100%;
 		margin: none;
+	}
+
+	#content{
+		
+		.aboutMe {
+			width: 100%;
+		}
+
+		.skills {
+			width: 100%;
+		}
+	}
+
+	footer {
+		width:100%;
+	}
+	
+}
+
+@media (max-width:490px) {
+	.mainHead {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		a {
+			padding-top: 1rem;
+			text-decoration: none;
+			color          : #74998a;
+		}
 	}
 }
 

@@ -153,14 +153,14 @@ html,
 body {
   height: 100%;
   max-width: 1050px;
-  margin: 1rem auto 3rem auto;
+  margin: 0 auto;
 }
 .mainHead {
   width: 85%;
   text-align: center;
   background-color: #aec0cf;
   padding: 20px 0;
-  margin: 1rem auto 3rem auto;
+  margin: 0 auto;
 }
 .mainHead h1 {
   font-size: 2.7rem;
@@ -260,9 +260,30 @@ body {
   text-align: center;
   width: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 730px) {
   .mainHead {
     width: 100%;
     margin: none;
+  }
+  #content .aboutMe {
+    width: 100%;
+  }
+  #content .skills {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .mainHead {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .mainHead a {
+    padding-top: 1rem;
+    text-decoration: none;
+    color: #74998a;
   }
 }
