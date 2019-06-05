@@ -17,8 +17,8 @@
 }
 
 .h2style {
-	font-size: 1.5rem;
-	color: #7d7d9e;
+	font-size : 1.5rem;
+	color     : #7d7d9e;
 	margin-top: 1rem;
 }
 
@@ -28,8 +28,8 @@
 }
 
 .liststyle {
-	margin: .25rem;
-	padding: .5rem 0;
+	margin       : .25rem;
+	padding      : .5rem 0;
 	border-bottom: 1px solid black;
 }
 
@@ -174,10 +174,10 @@ table {
 
 html,
 body {
-	height : 100%;
-	max-width:1050px;
+	height    : 100%;
+	max-width : 1050px;
 	// padding: 1rem 3rem 1rem 3rem;
-	margin: 0 auto;
+	margin    : 0 auto;
 }
 
 .mainHead {
@@ -186,7 +186,8 @@ body {
 	text-align      : center;
 	background-color: @secondColor;
 	.headSpace();
-	margin: 0 auto;;
+	margin: 0 auto;
+	;
 
 
 	h1 {
@@ -212,10 +213,10 @@ body {
 }
 
 #content {
-	display  : flex;
-	flex-wrap: wrap;
-	width: 85%;
-	margin: auto;
+	display        : flex;
+	flex-wrap      : wrap;
+	width          : 85%;
+	margin         : auto;
 	justify-content: space-between;
 
 	#self {
@@ -239,34 +240,34 @@ body {
 	}
 
 	.skills {
-		width           : 55%;
-		margin          : 1rem 0 1rem 1rem;
-		text-align      : center;
-		padding         : @contentPad;
-	
+		width     : 55%;
+		margin    : 1rem 0 1rem 1rem;
+		text-align: center;
+		padding   : @contentPad;
+
 		h2 {
 			.h2style();
 		}
 
 		#allIcons {
-			display: flex;
+			display  : flex;
 			flex-wrap: wrap;
 		}
 
-		.skillItems:first-child{
+		.skillItems:first-child {
 			.fchildlist();
 		}
 
-		.skillItems  {
+		.skillItems {
 			.liststyle();
 		}
-	
+
 	}
 
 	#work {
 
-		width: 100%;
-		margin          : 1rem auto 1rem auto;
+		width     : 100%;
+		margin    : 1rem auto 1rem auto;
 		text-align: left;
 		border-top: 2px solid black;
 
@@ -274,39 +275,39 @@ body {
 			.h2style();
 		}
 
-		.workItems:first-child{
+		.workItems:first-child {
 			.fchildlist();
-			border-top: none;
+			border-top      : none;
 			background-color: #b3b5b7;
 		}
 
 		.workItems {
 			.liststyle();
-			padding-right: .5rem;
-			padding-left: .5rem;
-			display: flex;
+			padding-right  : .5rem;
+			padding-left   : .5rem;
+			display        : flex;
 			justify-content: space-between;
 		}
 
 	}
 
 	footer {
-		margin-top: 4rem;
-		padding: 1rem 0;
+		margin-top      : 4rem;
+		padding         : 1rem 0;
 		background-color: #8e8e8e;
-		text-align: center;
-		width:100%;
+		text-align      : center;
+		width           : 100%;
 	}
 }
 
 @media (max-width:730px) {
 	.mainHead {
-		width: 100%;
+		width : 100%;
 		margin: none;
 	}
 
-	#content{
-		
+	#content {
+
 		.aboutMe {
 			width: 100%;
 		}
@@ -317,21 +318,26 @@ body {
 	}
 
 	footer {
-		width:100%;
+		width: 100%;
 	}
-	
+
 }
 
 @media (max-width:490px) {
 	.mainHead {
-		display: flex;
-		flex-wrap: wrap;
+		display       : flex;
+		flex-wrap     : wrap;
 		flex-direction: column;
+
 		a {
-			padding-top: 1rem;
+			padding-top    : 1rem;
 			text-decoration: none;
 			color          : #74998a;
 		}
 	}
-}
 
+	.workList {
+		font-size: .7rem;
+	}
+	
+}
