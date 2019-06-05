@@ -4,6 +4,20 @@
    License: none (public domain)
 */
 
+// variables 
+
+@baseColor: #E7E8E9;
+@secondColor: #aec0cf;
+@sectionMarg: 2rem auto 0 auto;
+@contentPad: 10px 10px 10px 10px; 
+// Mixins
+
+.headSpace {
+	padding: 10px 0;
+}
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,7 +34,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 10px;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -31,7 +45,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: @secondColor;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -54,6 +71,58 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	padding: 1rem 3rem 1rem 3rem;
 }
+
+.mainHead {
+
+	width: 85%;
+	text-align: center;
+	background-color: @baseColor;
+	.headSpace();
+	margin: @sectionMarg;
+
+
+	h1 {
+		font-size: 2.7rem;
+		margin-bottom: .5rem;
+	}
+
+	h2 {
+		font-size: 1.7rem;
+		margin-bottom: .5rem;
+	}
+
+	a:not(last-child) {
+		margin: 0 2rem 0 2rem;
+		text-decoration: none;
+		color: #74998a;
+	}
+
+}
+
+#content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aboutMe {
+	background-color: @baseColor;
+	width: 35%;
+	margin: @sectionMarg;
+	text-align: center;
+	padding:@contentPad;
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	p {
+		padding: @contentPad
+	}
+
+}
+
+
 
