@@ -1,1 +1,292 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+.headSpace {
+  padding: 20px 0;
+}
+.h2style {
+  font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
+}
+.fchildlist {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+}
+.liststyle {
+  margin: 0.25rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid black;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 10px;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: white;
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.mainHead {
+  width: 85%;
+  text-align: center;
+  background-color: #aec0cf;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.mainHead h1 {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+}
+.mainHead h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.mainHead #self {
+  margin: 0.5rem 0;
+}
+.mainHead a:not(last-child) {
+  margin: 0 2rem 0 2rem;
+  text-decoration: none;
+  color: #74998a;
+}
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+}
+#content #self {
+  align-content: center;
+}
+#content .aboutMe {
+  background-color: #E7E8E9;
+  width: 40%;
+  margin: 1rem 0 1rem 0;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+#content .aboutMe h2 {
+  font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
+}
+#content .aboutMe p {
+  padding: 10px 10px 10px 10px;
+}
+#content .skills {
+  width: 55%;
+  margin: 1rem 0 1rem 1rem;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+#content .skills h2 {
+  font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
+}
+#content .skills #allIcons {
+  display: flex;
+  flex-wrap: wrap;
+}
+#content .skills .skillItems:first-child {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+}
+#content .skills .skillItems {
+  margin: 0.25rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid black;
+}
+#content #work {
+  width: 100%;
+  margin: 1rem auto 1rem auto;
+  text-align: left;
+  border-top: 2px solid black;
+}
+#content #work h2 {
+  font-size: 1.5rem;
+  color: #7d7d9e;
+  margin-top: 1rem;
+}
+#content #work .workItems:first-child {
+  margin-top: 2rem;
+  border-top: 1px solid black;
+  border-top: none;
+  background-color: #b3b5b7;
+}
+#content #work .workItems {
+  margin: 0.25rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid black;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+#content footer {
+  margin-top: 4rem;
+  padding: 1rem 0;
+  background-color: #8e8e8e;
+  text-align: center;
+  width: 100%;
+}
+@media (max-width: 730px) {
+  .mainHead {
+    width: 100%;
+    margin: none;
+  }
+  #content .aboutMe {
+    width: 100%;
+  }
+  #content .skills {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 490px) {
+  .mainHead {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .mainHead a {
+    padding-top: 1rem;
+    text-decoration: none;
+    color: #74998a;
+  }
+  .workList {
+    font-size: 0.7rem;
+  }
+}
